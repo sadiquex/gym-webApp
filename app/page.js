@@ -7,7 +7,7 @@ import Testimonials from "./components/homepage/Testimonials";
 import Gallery from "./components/homepage/Gallery";
 import CalculateBMI from "./components/homepage/CalculateBMI";
 import Pricing from "./components/homepage/Pricing";
-export default function Home() {
+export default function page() {
   return (
     <main>
       <Hero />
