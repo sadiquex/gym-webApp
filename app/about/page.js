@@ -34,7 +34,7 @@ export default function page() {
         {/* images */}
         <div className="flex-1 relative -z-20">
           <Image
-            src="/assets/running-lady.png"
+            src="/assets/about-page/running-lady.png"
             priority
             height={500}
             width={800}
@@ -43,7 +43,7 @@ export default function page() {
             className="object-cover"
           />
           <Image
-            src="/assets/wave.png"
+            src="/assets/about-page/wave.png"
             priority
             fill
             alt="wave"
