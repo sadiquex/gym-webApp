@@ -41,7 +41,7 @@ export default function CalculateBMI() {
     <div className="max-w-[1000px] p-4 md:p-0 mx-auto mb-8 grid grid-cols-1 md:grid-cols-2 bg-darkAsh">
       <div className="flex flex-col gap-4 md:p-8">
         <h3 className="text-2xl whitespace-nowrap md:text-4xl font-semibold text-white text-center md:text-left">
-          Let's Calculate Your <span className="text-[#ff0336]">BMI</span>
+          Let&apos;s Calculate Your <span className="text-[#ff0336]">BMI</span>
         </h3>
         <p className="text-lg text-center md:text-left text-white">
           Easily determine your body mass index with our accurate calculation

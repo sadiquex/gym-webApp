@@ -8,7 +8,8 @@ export default function Gallery() {
       <h2 className="text-3xl font-bold text-center ">Our Workplace Gallery</h2>
       <p className="text-md text-darkAsh md:w-1/2 text-center mx-auto">
         Our Workplace Gallery features modern office, team collaboration, and
-        fun culture. Attracts talents and showcases company's work atmosphere.
+        fun culture. Attracts talents and showcases company&apos;s work
+        atmosphere.
       </p>
       {/* gallery grid */}
       <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-2 w-full min-h-[1200px] md:min-h-[500px]">
