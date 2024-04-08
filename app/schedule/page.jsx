@@ -6,7 +6,7 @@ import scheduleData from "./scheduleData";
 import Button from "../components/ui/Button";
 import Link from "next/link";
 
-export default function page() {
+export default function SchedulePage() {
   const { scheduleActivities } = scheduleData;
   const [selectedDay, setSelectedDay] = useState("Monday");
 

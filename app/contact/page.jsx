@@ -1,16 +1,17 @@
 import PageHeader from "../components/ui/PageHeader";
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaPinterest } from "react-icons/fa6";
-import Button from "../components/ui/Button";
+import {
+  FaFacebook,
+  FaInstagramSquare,
+  FaTwitter,
+  FaPinterest,
+} from "react-icons/fa";
 
-export default function page() {
+export default function Page() {
   const socialIcons = [
-    <FaInstagramSquare />,
-    <FaTwitter />,
-    <FaPinterest />,
-    <FaFacebook />,
+    { icon: <FaInstagramSquare />, link: "https://www.instagram.com/example" },
+    { icon: <FaTwitter />, link: "https://twitter.com/example" },
+    { icon: <FaPinterest />, link: "https://www.pinterest.com/example" },
+    { icon: <FaFacebook />, link: "https://www.facebook.com/example" },
   ];
 
   return (
@@ -58,13 +59,16 @@ export default function page() {
             <div className="space-y-4">
               <h3 className="text-xl font-bold">Follow Us On</h3>
               <div className="flex gap-2">
-                {socialIcons.map((icon, i) => (
-                  <span
-                    className="rounded-full bg-gray-200 p-3 text-xl hover:bg-primaryColor hover:text-white cursor-pointer"
+                {socialIcons.map((item, i) => (
+                  <a
                     key={i}
+                    href={item.link}
+                    className="rounded-full bg-gray-200 p-3 text-xl hover:bg-primaryColor hover:text-white cursor-pointer"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    {icon}
-                  </span>
+                    {item.icon}
+                  </a>
                 ))}
               </div>
             </div>
