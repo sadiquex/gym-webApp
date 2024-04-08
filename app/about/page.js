@@ -11,7 +11,7 @@ export default function page() {
 
       {/* 2 col grid */}
       <div className="relative max-w-[1000px] mx-auto mt-6 flex flex-col-reverse items-center md:flex-row p-4 md:p-0 gap-4">
-        <div className="w-full flex-1 flex flex-col items-center md:items-stretch gap-4 text-center md:text-left">
+        <div className="w-full flex-1 flex flex-col md:items-stretch gap-4 text-center md:text-left">
           {/* brush heading */}
           <PaintBrushBg>Who are we?</PaintBrushBg>
           {/* title */}
@@ -27,7 +27,9 @@ export default function page() {
           </p>
           {/* button */}
           <div>
-            <Button otherStyles="text-white font-bold">TAKE A TOUR</Button>
+            <Button otherStyles="text-white font-bold mx-auto">
+              TAKE A TOUR
+            </Button>
           </div>
         </div>
 

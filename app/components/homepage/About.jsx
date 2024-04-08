@@ -7,7 +7,7 @@ import { GiGymBag } from "react-icons/gi";
 export default function About() {
   return (
     <div className="relative max-w-[1000px] mx-auto mt-6 flex flex-col-reverse md:flex-row p-4 md:p-0 gap-4">
-      <div className="w-full flex-1 flex flex-col items-center md:items-start gap-4">
+      <div className="w-full flex-1 flex flex-col md:items-stretch gap-4">
         {/* brush heading */}
         <PaintBrushBg>Who are we?</PaintBrushBg>
         {/* title */}
@@ -39,7 +39,7 @@ export default function About() {
           ))}
         </div>
         {/* button */}
-        <Button otherStyles="bg-darhAsh text-white font-bold">
+        <Button otherStyles="bg-darhAsh text-white font-bold mx-auto">
           TAKE A TOUR
         </Button>
       </div>
@@ -47,7 +47,7 @@ export default function About() {
       <div className="flex-1 relative -z-20">
         <Image
           src="/assets/homepage/running-lady.png"
-          priority
+          priority={false}
           height={500}
           width={800}
           alt="Woman running"
@@ -55,7 +55,7 @@ export default function About() {
         />
         <Image
           src={waveImage}
-          priority
+          priority={false}
           fill
           alt="wave"
           className="object-cover -z-10  transform rotate-180"

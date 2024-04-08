@@ -16,48 +16,50 @@ export default function Gallery() {
         <div className="col-span-2 md:row-span-2 relative">
           <Image
             alt="gallery-img-1"
-            fill
-            priority
             src="/assets/homepage/gallery/gallery-img-1.jpg"
-            sizes="100vw"
+            fill
+            priority={false}
+            // sizes="(max-width: 480px) 60vh"
           />
         </div>
         <div className="col-span-2 row-span-1 relative">
           <Image
             alt="gallery-img-2"
-            fill
-            priority
             src="/assets/homepage/gallery/gallery-img-2.jpg"
-            sizes="100vw"
+            fill
+            priority={false}
+            // sizes="(max-width: 480px) 60vh"
             style={{ objectFit: "cover" }}
           />
         </div>
         <div className="col-span-2 md:row-span-2 relative">
           <Image
             alt="gallery-img-1"
-            fill
-            priority
-            sizes="100vw"
             src="/assets/homepage/gallery/gallery-img-3.jpg"
+            fill
+            priority={false}
+            // sizes="(max-width: 480px) 60vh"
           />
         </div>
         <div className="col-span-1 row-span-1 relative">
           <Image
             alt="gallery-img-1"
-            fill
-            priority
-            sizes="100vw"
             src="/assets/homepage/gallery/gallery-img-4.jpg"
+            fill
+            priority={false}
+            // sizes="(max-width: 480px) 60vh"
           />
         </div>
         {/* not showing on mobile */}
         <div className="col-span-1 row-span-2 md:row-span-1 relative">
           <Image
             alt="gallery-img-5"
-            priority
-            sizes="100vw"
             src="/assets/homepage/gallery/gallery-img-5.jpg"
+            priority={false}
             fill
+            // the image will be 100% of the viewport width when the viewport is 480 pixels or less, and 50% of the viewport width otherwise.
+            // sizes="(max-width: 480px) auto, 50vh"
+            // "(max-width: 480px) 60vh"
           />
         </div>
       </div>

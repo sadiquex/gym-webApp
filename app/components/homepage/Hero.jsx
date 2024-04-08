@@ -16,7 +16,9 @@ export default function Hero() {
       }}
     >
       <PaintBrushBg>FIND YOUR ENERGY</PaintBrushBg>
-      <h1 className="text-white text-5xl font-extrabold">MAKE YOUR BODY</h1>
+      <h1 className="text-white text-5xl text-center font-extrabold">
+        MAKE YOUR BODY
+      </h1>
       <h1 className="text-white text-5xl">FIT & PERFECT</h1>
       <Link href="/classes">
         <Button

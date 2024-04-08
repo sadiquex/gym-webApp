@@ -37,9 +37,10 @@ export default function GalleryPage() {
               // fill
               width={500}
               height={500}
-              priority
+              priority={false}
               src={img}
-              sizes="100vw"
+              // For example, if you know your styling will cause an image to be full-width on mobile devices, in a 2-column layout on tablets, and a 3-column layout on desktop displays, you should include a sizes property such as the following:
+              sizes="(max-width: 480px) 60vh"
             />
           </div>
         ))}
