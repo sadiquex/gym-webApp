@@ -22,7 +22,7 @@ export default function SchedulePage() {
           {Object.keys(scheduleActivities).map((day, i) => (
             <button
               className={`font-bold rounded-full flex items-center justify-center border-2 bg-transparent text-black hover:bg-primaryColor hover:text-white py-3 px-8 cursor-pointer transition-all duration-300 ${
-                selectedDay === day ? "bg-red-600 text-white border-none" : ""
+                selectedDay === day ? "text-red-400 bg-red-600 border-none" : ""
               }`}
               onClick={() => setSelectedDay(day)}
               key={i}
