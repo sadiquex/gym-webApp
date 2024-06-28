@@ -1,5 +1,3 @@
-### hey, sadique | gym
-
 #### **[Live Link](https://sadique-gym-webapp.netlify.app/)**
 
 ![desktop-hero](./public/preview/hero-desktop.png "Desktop Hero")
